@@ -1,0 +1,13 @@
+Mime Central Engine Server listening on 0.0.0.0:50051
+[Server] Client connected. Stream opened.
+[Server] Received 100 packets. Last timestamp: 990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 1990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 2990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 3990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 4990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 5990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 6990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 7990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 8990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Received 100 packets. Last timestamp: 9990000000 ns. | Thumb Flex: 0.5 | Camera Z: 1
+[Server] Stream closed by client.

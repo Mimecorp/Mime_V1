@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package mime.trajectory;
+
+import "telemetry.proto";
+
+// Represents an SE(3) pose in the normalized [-1.0, 1.0] bounding box
+message NormalizedPose {
+  double x = 1; // Range [-1.0, 1.0]
+  double y = 2; // Range [-1.0, 1.0]
+  double z = 3; // Range [-1.0, 1.0]
+  mime.telemetry.Quaternion orientation = 4; 
+}
+
+// A streamed command to the dynamic retargeting engine
+message TrajectoryCommand {
+  uint64 timestamp_ns = 1;
+  NormalizedPose end_effector_pose = 2;
+  double gripper_closure = 3; // Range: 0.0 (fully open) to 1.0 (fully closed)
+}

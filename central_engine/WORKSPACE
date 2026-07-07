@@ -1,0 +1,44 @@
+workspace(name = "mime_central_engine")
+
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+# rules_proto
+http_archive(
+    name = "rules_proto",
+    sha256 = "dc3fb206a2cb3441b485eb1e423165b231235a1ea9b031b4433cf7bc1fa460dd",
+    strip_prefix = "rules_proto-5.3.0-21.7",
+    urls = [
+        "https://github.com/bazelbuild/rules_proto/archive/refs/tags/5.3.0-21.7.tar.gz",
+    ],
+)
+
+# gRPC toolchain
+http_archive(
+    name = "com_github_grpc_grpc",
+    urls = [
+        "https://github.com/grpc/grpc/archive/refs/tags/v1.54.0.tar.gz",
+    ],
+    strip_prefix = "grpc-1.54.0",
+)
+load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
+grpc_deps()
+load("@com_github_grpc_grpc//bazel:grpc_extra_deps.bzl", "grpc_extra_deps")
+grpc_extra_deps()
+
+# Eigen for Matrix Math
+http_archive(
+    name = "eigen",
+    build_file_content = """
+cc_library(
+    name = "eigen",
+    hdrs = glob(["Eigen/**", "unsupported/Eigen/**"]),
+    includes = ["."],
+    visibility = ["//visibility:public"],
+)
+""",
+    sha256 = "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+    strip_prefix = "eigen-3.4.0",
+    urls = [
+        "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+    ],
+)

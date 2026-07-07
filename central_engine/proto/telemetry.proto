@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package mime.telemetry;
+
+// Represents a 3D point in space (Optical Tracking)
+message Point3D {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+// Represents an orientation quaternion (IMU Data)
+message Quaternion {
+  double w = 1;
+  double x = 2;
+  double y = 3;
+  double z = 4;
+}
+
+// Data from a single IMU sensor on the glove
+message IMUReading {
+  string sensor_id = 1;
+  Quaternion orientation = 2;
+  Point3D linear_acceleration = 3;
+}
+
+// Data from flex sensors on the glove fingers
+message FlexSensors {
+  double thumb = 1; // Range: 0.0 (straight) to 1.0 (fully bent)
+  double index = 2; // Range: 0.0 (straight) to 1.0 (fully bent)
+}
+
+// Telemetry packet sent at high frequency from the edge nodes
+message EdgeTelemetry {
+  uint64 timestamp_ns = 1;
+  repeated IMUReading imu_array = 2;
+  Point3D optical_tracking_position = 3; // From the shoulder-mounted camera
+  FlexSensors flex_sensors = 4; // Raw flex sensor data for the gripper
+}
+
+// Server response. Can be used later to send haptic feedback commands back to the edge node.
+message StreamResponse {
+  bool success = 1;
+}
+
+// Empty request for subscribing
+message SubscribeRequest {}
+
+// The output of the Extended Kalman Filter
+message FusedState {
+  double px = 1;
+  double py = 2;
+  double pz = 3;
+  double vx = 4;
+  double vy = 5;
+  double vz = 6;
+  Quaternion orientation = 7;
+}
+
+// The core communication interface
+service MimeTelemetryService {
+  // A client-side streaming RPC for high-frequency data from the Edge Node
+  rpc StreamTelemetry (stream EdgeTelemetry) returns (StreamResponse);
+  
+  // A server-side streaming RPC for the Visualizer to subscribe to the math engine
+  rpc SubscribeFusedState (SubscribeRequest) returns (stream FusedState);
+}
