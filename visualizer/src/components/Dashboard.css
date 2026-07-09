@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
+
+.tactical-dashboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  font-family: 'Rajdhani', sans-serif;
+  color: #00f0ff;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* Make inner elements clickable */
+.header, .panel, .tactical-btn {
+  pointer-events: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: rgba(4, 15, 30, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  height: calc(100vh - 50px);
+  pointer-events: none;
+}
+
+.sidebar {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  pointer-events: auto;
+}
+
+.center-panel {
+  flex: 1;
+  background: rgba(4, 15, 30, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  box-shadow: inset 0 0 30px rgba(0, 240, 255, 0.05), 0 8px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+  animation: scanline 4s linear infinite;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
+
+.canvas-container {
+  flex: 1;
+  position: relative;
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+}
+
+.panel {
+  background: rgba(4, 15, 30, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Futuristic corner accents */
+.panel::after {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px;
+  width: 20px; height: 20px;
+  border-top: 2px solid #00f0ff;
+  border-left: 2px solid #00f0ff;
+  border-top-left-radius: 12px;
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+  padding-bottom: 8px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.5);
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.status-row span:first-child {
+  color: #8892b0;
+}
+
+.status-online { 
+  color: #00f0ff; 
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+.status-offline { 
+  color: #ff3366; 
+  text-shadow: 0 0 8px rgba(255, 51, 102, 0.6);
+}
+.status-booting { 
+  color: #ffcc00; 
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 15px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+.table-header { 
+  border-bottom: 1px dashed rgba(0, 240, 255, 0.3); 
+  padding-bottom: 8px; 
+  margin-bottom: 12px; 
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.tactical-btn {
+  flex: 1;
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.1);
+}
+
+.tactical-btn:hover {
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.progress-bar {
+  background: rgba(4, 15, 30, 0.8);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 8px;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+.progress-fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.5);
+  transition: width 0.3s ease;
+}
