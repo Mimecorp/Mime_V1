@@ -13,7 +13,7 @@ EkfFilter::EkfFilter() {
     
     Q_ = Eigen::MatrixXd::Identity(6, 6) * 0.01; 
     
-    R_ = Eigen::MatrixXd::Identity(3, 3) * 0.1;  
+    R_ = Eigen::MatrixXd::Identity(3, 3) * 0.001;  
     
     // We only measure position (px, py, pz)
     H_ = Eigen::MatrixXd::Zero(3, 6);

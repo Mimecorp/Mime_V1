@@ -55,6 +55,7 @@ message FusedState {
   double vy = 5;
   double vz = 6;
   Quaternion orientation = 7;
+  FlexSensors flex_sensors = 8;
 }
 
 // The core communication interface

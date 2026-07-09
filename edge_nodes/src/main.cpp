@@ -5,9 +5,17 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
+#include <mutex>
 #include <grpcpp/grpcpp.h>
 #include "telemetry.grpc.pb.h"
 #include "../shared/udp_packet.h"
+
+struct CameraData {
+    float x;
+    float y;
+    float z;
+    bool has_data;
+};
 
 using grpc::Channel;
 using grpc::ClientContext;
@@ -19,9 +27,45 @@ using mime::telemetry::StreamResponse;
 class RelayClient {
 public:
     RelayClient(std::shared_ptr<Channel> channel)
-        : stub_(MimeTelemetryService::NewStub(channel)) {}
+        : stub_(MimeTelemetryService::NewStub(channel)) {
+        latest_camera_data_.has_data = false;
+    }
+
+    void RunCameraListener() {
+        int cam_socket = socket(AF_INET, SOCK_DGRAM, 0);
+        if (cam_socket < 0) return;
+        
+        sockaddr_in server_addr{};
+        server_addr.sin_family = AF_INET;
+        server_addr.sin_addr.s_addr = INADDR_ANY;
+        server_addr.sin_port = htons(10001);
+        
+        if (bind(cam_socket, (const sockaddr*)&server_addr, sizeof(server_addr)) < 0) {
+            std::cerr << "Failed to bind camera UDP socket." << std::endl;
+            return;
+        }
+        
+        std::cout << "Relay Node listening for Optical Tracker on port 10001..." << std::endl;
+        
+        float buffer[3];
+        while (true) {
+            sockaddr_in client_addr{};
+            socklen_t client_len = sizeof(client_addr);
+            ssize_t bytes = recvfrom(cam_socket, buffer, sizeof(buffer), 0, (sockaddr*)&client_addr, &client_len);
+            if (bytes == 12) {
+                std::lock_guard<std::mutex> lock(camera_mutex_);
+                latest_camera_data_.x = buffer[0];
+                latest_camera_data_.y = buffer[1];
+                latest_camera_data_.z = buffer[2];
+                latest_camera_data_.has_data = true;
+            }
+        }
+    }
 
     void RunRelay() {
+        // Spawn the optical tracker background thread
+        std::thread cam_thread(&RelayClient::RunCameraListener, this);
+        cam_thread.detach();
         // 1. Setup UDP Socket to listen for ESP32 broadcasts
         int udp_socket = socket(AF_INET, SOCK_DGRAM, 0);
         if (udp_socket < 0) {
@@ -80,8 +124,24 @@ public:
                 flex->set_thumb(packet.flex_thumb);
                 flex->set_index(packet.flex_index);
                 
-                auto* pos = telemetry.mutable_optical_tracking_position();
-                pos->set_z(packet.camera_z);
+                // Inject the latest optical tracking position if the Python daemon sent it
+                bool include_cam = false;
+                CameraData cam_data;
+                {
+                    std::lock_guard<std::mutex> lock(camera_mutex_);
+                    if (latest_camera_data_.has_data) {
+                        cam_data = latest_camera_data_;
+                        include_cam = true;
+                        latest_camera_data_.has_data = false; // consume it so we don't send stale data repeatedly
+                    }
+                }
+                
+                if (include_cam) {
+                    auto* pos = telemetry.mutable_optical_tracking_position();
+                    pos->set_x(cam_data.x);
+                    pos->set_y(cam_data.y);
+                    pos->set_z(cam_data.z);
+                }
                 
                 // Blast to Central Engine!
                 if (!writer->Write(telemetry)) {
@@ -103,6 +163,8 @@ public:
 
 private:
     std::unique_ptr<MimeTelemetryService::Stub> stub_;
+    std::mutex camera_mutex_;
+    CameraData latest_camera_data_;
 };
 
 int main(int argc, char** argv) {

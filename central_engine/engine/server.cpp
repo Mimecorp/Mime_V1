@@ -119,6 +119,10 @@ public:
                 auto* q = g_latest_state.mutable_orientation();
                 q->set_w(q_w); q->set_x(q_x); q->set_y(q_y); q->set_z(q_z);
                 
+                auto* flex = g_latest_state.mutable_flex_sensors();
+                flex->set_thumb(flex_thumb);
+                flex->set_index(flex_index);
+                
                 g_has_new_state = true;
             }
             g_state_cv.notify_all();

@@ -49,6 +49,20 @@ export function UrdfArm({ telemetry }: UrdfArmProps) {
         // Smoothly interpolate for a premium 60fps feel
         groupRef.current.quaternion.slerp(targetQuat, 0.3)
       }
+
+      // Actuate the fingers if the URDF is loaded and flex data exists
+      if (robot && robot.joints && telemetry.flex_sensors) {
+        const thumbFlex = telemetry.flex_sensors.thumb || 0;
+        const indexFlex = telemetry.flex_sensors.index || 0;
+        
+        // Map 0.0-1.0 flex to radians (approx 90 degrees)
+        if (robot.joints['thumb_joint']) {
+          robot.joints['thumb_joint'].setJointValue(-1.57 * thumbFlex);
+        }
+        if (robot.joints['index_joint']) {
+          robot.joints['index_joint'].setJointValue(1.57 * indexFlex);
+        }
+      }
     }
   })
 
