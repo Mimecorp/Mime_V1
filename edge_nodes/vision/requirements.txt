@@ -1,2 +1,5 @@
 opencv-python
 mediapipe
+pyyaml
+pydantic
+pytest
