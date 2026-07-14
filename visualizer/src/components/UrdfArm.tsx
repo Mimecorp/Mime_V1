@@ -41,11 +41,14 @@ export function UrdfArm({ telemetry }: UrdfArmProps) {
   useFrame(() => {
     if (groupRef.current && telemetry) {
       // Map EKF telemetry directly to the entire URDF group's transform
-      groupRef.current.position.set(telemetry.px, telemetry.py, telemetry.pz)
+      // Commented out temporarily to prevent "Rocketship Drift" from IMU double-integration without optical tracking
+      // groupRef.current.position.set(telemetry.px, telemetry.py, telemetry.pz)
 
       if (telemetry.orientation) {
         const { w, x, y, z } = telemetry.orientation
-        const targetQuat = new THREE.Quaternion(x, y, z, w)
+        // Translate IMU coordinate system into the browser's 3D viewport (Y-up right-handed)
+        // using the exact mapping from your blueprint: -q2, -q3, q1, q0 (where q0=w, q1=x, q2=y, q3=z)
+        const targetQuat = new THREE.Quaternion(-y, -z, x, w)
         // Smoothly interpolate for a premium 60fps feel
         groupRef.current.quaternion.slerp(targetQuat, 0.3)
       }
