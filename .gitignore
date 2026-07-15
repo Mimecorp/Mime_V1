@@ -1,5 +1,6 @@
 # Bazel
 bazel-*
+.vscode/*
 
 # PlatformIO
 .pio/

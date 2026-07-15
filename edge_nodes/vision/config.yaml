@@ -1,0 +1,9 @@
+network:
+  relay_ip: 127.0.0.1
+  relay_port: 10001
+tracker:
+  detection_confidence: 0.5
+  tracking_confidence: 0.5
+  target_fps: 30
+  landmark: RIGHT_WRIST
+  scale: { x: 1.0, y: 1.0, z: 1.0 }

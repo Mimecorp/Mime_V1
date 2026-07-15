@@ -1,28 +1,23 @@
 import cv2
-import socket
-import struct
-import time
-import math
 
-# Setup UDP Socket to send data to C++ Relay Node
-UDP_IP = "127.0.0.1"
-UDP_PORT = 10001
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+from config import load_config
+from pose_tracker import PoseTracker, UdpSink
 
-print(f"Starting Optical Tracker on UDP port {UDP_PORT}... (Simulated Mode)")
 
-t = 0.0
-while True:
-    # Simulate a gentle hand movement for the demo
-    px = math.sin(t) * 0.2
-    py = math.cos(t) * 0.2 + 0.3
-    pz = math.sin(t * 0.5) * 0.1 - 0.5
+def main():
+    cfg = load_config()
 
-    # Pack into 3 floats (12 bytes)
-    payload = struct.pack('<fff', px, py, pz)
-    
-    # Blast it to the Relay Node!
-    sock.sendto(payload, (UDP_IP, UDP_PORT))
+    tracker = PoseTracker(cfg.tracker)
+    sink = UdpSink(cfg.network.relay_ip, cfg.network.relay_port)
+    camera = cv2.VideoCapture(0)  # Change index if using an external USB cam
 
-    t += 0.05
-    time.sleep(1.0 / 30.0)
+    print(f"Starting Optical Tracker on UDP port {cfg.network.relay_port}...")
+
+    try:
+        tracker.run(camera, sink)
+    finally:
+        camera.release()
+
+
+if __name__ == "__main__":
+    main()
