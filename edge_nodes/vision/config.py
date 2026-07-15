@@ -10,6 +10,13 @@ class PoseLandmark(str, Enum):
     RIGHT_WRIST = "RIGHT_WRIST"
 
 
+class TrackerSource(str, Enum):
+    """Where wrist coordinates come from: a real camera + MediaPipe, or the
+    camera-free simulated motion for demos."""
+    CAMERA = "CAMERA"
+    SIMULATED = "SIMULATED"
+
+
 class ScaleConfig(BaseModel):
     x: float
     y: float
@@ -20,6 +27,7 @@ class NetworkConfig(BaseModel):
     relay_port: int = Field(ge=1, le=65535)
 
 class TrackerConfig(BaseModel):
+    source: TrackerSource = TrackerSource.SIMULATED
     detection_confidence: float = Field(ge=0.0, le=1.0)
     tracking_confidence: float = Field(ge=0.0, le=1.0)
     target_fps: int = Field(gt=0)

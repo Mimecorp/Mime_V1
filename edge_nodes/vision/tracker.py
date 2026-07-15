@@ -1,17 +1,23 @@
-import cv2
-
-from config import load_config
-from pose_tracker import PoseTracker, UdpSink
+from config import TrackerSource, load_config
+from pose_tracker import PoseTracker, SimulatedTracker, UdpSink
 
 
 def main():
     cfg = load_config()
 
-    tracker = PoseTracker(cfg.tracker)
     sink = UdpSink(cfg.network.relay_ip, cfg.network.relay_port)
-    camera = cv2.VideoCapture(0)  # Change index if using an external USB cam
 
     print(f"Starting Optical Tracker on UDP port {cfg.network.relay_port}...")
+
+    if cfg.tracker.source == TrackerSource.SIMULATED:
+        tracker = SimulatedTracker(cfg.tracker)
+        tracker.run(sink)  # No camera needed in simulated mode.
+        return
+
+    import cv2
+
+    tracker = PoseTracker(cfg.tracker)
+    camera = cv2.VideoCapture(0)  # Change index if using an external USB cam
 
     try:
         tracker.run(camera, sink)

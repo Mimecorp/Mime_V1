@@ -24,3 +24,7 @@ telemetry_log_*.csv
 
 # OS
 .DS_Store
+
+# Cache
+__pycache__/
+

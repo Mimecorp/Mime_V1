@@ -2,6 +2,7 @@ network:
   relay_ip: 127.0.0.1
   relay_port: 10001
 tracker:
+  source: SIMULATED          # CAMERA = real MediaPipe tracking, SIMULATED = canned demo motion
   detection_confidence: 0.5
   tracking_confidence: 0.5
   target_fps: 30

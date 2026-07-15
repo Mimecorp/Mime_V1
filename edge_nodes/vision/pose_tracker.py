@@ -1,10 +1,10 @@
-import cv2
-import mediapipe as mp
+import math
 import struct
 import time
 import socket
 from dataclasses import dataclass
 from config import TrackerConfig
+
 
 @dataclass
 class WristState:
@@ -24,6 +24,8 @@ class UdpSink:
 
 class PoseTracker:
     def __init__(self, config: TrackerConfig):
+        import mediapipe as mp # Lazy import -> only needed when we have the camera stack
+
         self.config = config
 
         mp_pose = mp.solutions.pose
@@ -36,6 +38,8 @@ class PoseTracker:
         self.landmark = getattr(mp_pose.PoseLandmark, config.landmark.value)
 
     def process_frame(self, image) -> WristState | None:
+        import cv2 # Lazy import -> only needed when we have the camera stack
+
         # Pure: run pose estimation and return the scaled wrist coordinate, or None.
         image.flags.writeable = False
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -62,6 +66,33 @@ class PoseTracker:
             state = self.process_frame(image)
             if state is not None:
                 sink.send(state)
+
+            # Throttle to the configured frame rate to save CPU.
+            time.sleep(1.0 / self.config.target_fps)
+
+class SimulatedTracker:
+    
+    """Camera-free source: emits a canned sine/cosine wrist motion so the
+    pipeline runs without a webcam. Drop-in for PoseTracker as far as the sink
+    is concerned since it produces the same WristState."""
+
+    def __init__(self, config: TrackerConfig):
+        self.config = config
+        self.t = 0.0
+
+    def next_state(self) -> WristState:
+        # Pure: advance the clock and return the simulated wrist coordinate.
+        px = math.sin(self.t) * 0.2
+        py = math.cos(self.t) * 0.2 + 0.3
+        pz = math.sin(self.t * 0.5) * 0.1 - 0.5
+
+        self.t += 0.05
+        return WristState(px, py, pz)
+
+    def run(self, sink):
+        print("Running in Simulated Mode.")
+        while True:
+            sink.send(self.next_state())
 
             # Throttle to the configured frame rate to save CPU.
             time.sleep(1.0 / self.config.target_fps)
