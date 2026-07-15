@@ -33,9 +33,14 @@ console.log("Connecting to C++ Central Engine via gRPC...");
 // Open the Server-Side Streaming RPC to get continuous math updates
 const call = client.SubscribeFusedState({});
 
+let lastEmitTime = 0;
 call.on('data', (fusedState) => {
-    // When the C++ engine gives us a new state, instantly blast it to the browser over WebSockets!
-    io.emit('telemetry', fusedState);
+    const now = Date.now();
+    // Throttle WebSockets to 60 FPS (approx 16ms) so we don't choke React's state!
+    if (now - lastEmitTime >= 16) {
+        io.emit('telemetry', fusedState);
+        lastEmitTime = now;
+    }
 });
 
 call.on('error', (err) => {
