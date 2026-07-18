@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package mime.trajectory;
 
-import "telemetry.proto";
+import "proto/telemetry.proto";
 
 // Represents an SE(3) pose in the normalized [-1.0, 1.0] bounding box
 message NormalizedPose {

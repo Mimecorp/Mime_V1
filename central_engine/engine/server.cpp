@@ -7,7 +7,7 @@
 #include <ctime>
 #include "proto/telemetry.grpc.pb.h"
 #include "ekf.h"
-#include "logger.h"
+// #include "logger.h" (Deprecated in favor of Rerun gRPC Logger)
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -41,13 +41,7 @@ public:
         
         std::cout << "[Server] Edge Node connected. Stream opened." << std::endl;
 
-        // Initialize Data Logger
-        mime::engine::DataLogger logger;
-        std::time_t t = std::time(nullptr);
-        char filename[64];
-        std::strftime(filename, sizeof(filename), "telemetry_log_%Y%m%d_%H%M%S.csv", std::localtime(&t));
-        logger.Open(filename);
-        std::cout << "[Server] Logging telemetry to " << filename << std::endl;
+        std::cout << "[Server] Edge Node connected. Stream opened." << std::endl;
 
         // Initialize EKF
         mime::engine::EkfFilter ekf;
@@ -100,11 +94,7 @@ public:
             }
 
             // Log Data to Disk
-            logger.LogState(telemetry.timestamp_ns(), 
-                            state(0), state(1), state(2), // position
-                            state(3), state(4), state(5), // velocity
-                            q_w, q_x, q_y, q_z,           // orientation
-                            flex_thumb, flex_index);      // flex
+            // (Deprecated: We now use rerun_logger.py to stream telemetry to Rerun.io over gRPC)
 
             // Notify subscribers
             {
@@ -136,7 +126,6 @@ public:
             }
         }
         
-        logger.Close();
         std::cout << "[Server] Edge Node disconnected." << std::endl;
         response->set_success(true);
         return Status::OK;

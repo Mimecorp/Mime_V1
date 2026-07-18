@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbx5g87u3jd1"]
+
+[ext_resource type="Script" path="res://Scripts/TelemetryClient.cs" id="1_tel"]
+[ext_resource type="Script" path="res://Scripts/RobotController.cs" id="2_rob"]
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 0, 5, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1, 3)
+
+[node name="TelemetryClient" type="Node" parent="."]
+script = ExtResource("1_tel")
+
+[node name="RobotArm" type="Node3D" parent="."]
+script = ExtResource("2_rob")
+TelemetryClientPath = NodePath("../TelemetryClient")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="RobotArm"]
+size = Vector3(0.5, 0.5, 0.5)

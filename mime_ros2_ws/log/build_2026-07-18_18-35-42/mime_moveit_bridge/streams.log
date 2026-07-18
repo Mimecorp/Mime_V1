@@ -1,0 +1,69 @@
+[0.010s] Invoking command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge -DCMAKE_INSTALL_PREFIX=/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge
+[0.018s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.127s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.454s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.456s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.460s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.471s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.479s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.504s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.505s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[11.909s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.945s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[11.953s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[12.068s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[13.616s] -- Found parameter_traits: 0.7.4 (/opt/ros/humble/share/parameter_traits/cmake)
+[13.625s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[17.035s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[17.064s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[20.203s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[20.235s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[20.258s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[20.554s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[20.555s] -- Checking for module 'grpc++'
+[20.570s] --   Found grpc++, version 1.30.2
+[20.872s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[21.136s] -- Added test 'copyright' to check source files copyright and LICENSE
+[21.138s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[21.139s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge/include>
+[21.139s] -- Configured cppcheck exclude dirs and/or files: 
+[21.141s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[21.141s] -- Configured cpplint exclude dirs and/or files: 
+[21.143s] -- Added test 'lint_cmake' to check CMake code style
+[21.146s] -- Added test 'uncrustify' to check C / C++ code style
+[21.146s] -- Configured uncrustify additional arguments: 
+[21.148s] -- Added test 'xmllint' to check XML markup files
+[21.153s] -- Configuring done
+[21.255s] -- Generating done
+[21.274s] -- Build files have been written to: /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge
+[21.293s] Invoked command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge -DCMAKE_INSTALL_PREFIX=/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge
+[21.297s] Invoking command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge -- -j12 -l12
+[21.338s] [ 16%] [34m[1mGenerating telemetry.pb.cc, telemetry.pb.h, telemetry.grpc.pb.cc, telemetry.grpc.pb.h[0m
+[21.386s] [ 50%] [32mBuilding CXX object CMakeFiles/telemetry_grpc_proto.dir/telemetry.grpc.pb.cc.o[0m
+[21.386s] [ 50%] [32mBuilding CXX object CMakeFiles/telemetry_grpc_proto.dir/telemetry.pb.cc.o[0m
+[29.040s] [ 66%] [32m[1mLinking CXX static library libtelemetry_grpc_proto.a[0m
+[29.397s] [ 66%] Built target telemetry_grpc_proto
+[29.417s] [ 83%] [32mBuilding CXX object CMakeFiles/moveit_bridge_node.dir/src/moveit_bridge_node.cpp.o[0m
+[50.231s] [100%] [32m[1mLinking CXX executable moveit_bridge_node[0m
+[51.646s] [100%] Built target moveit_bridge_node
+[51.670s] Invoked command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge -- -j12 -l12
+[51.689s] Invoking command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge
+[51.697s] -- Install configuration: ""
+[51.700s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/lib/mime_moveit_bridge/moveit_bridge_node
+[51.702s] -- Set runtime path of "/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/lib/mime_moveit_bridge/moveit_bridge_node" to ""
+[51.705s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/package_run_dependencies/mime_moveit_bridge
+[51.705s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/parent_prefix_path/mime_moveit_bridge
+[51.708s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/ament_prefix_path.sh
+[51.708s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/ament_prefix_path.dsv
+[51.708s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/path.sh
+[51.709s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/path.dsv
+[51.710s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.bash
+[51.710s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.sh
+[51.710s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.zsh
+[51.711s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.dsv
+[51.711s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/package.dsv
+[51.712s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/packages/mime_moveit_bridge
+[51.712s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/cmake/mime_moveit_bridgeConfig.cmake
+[51.712s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/cmake/mime_moveit_bridgeConfig-version.cmake
+[51.713s] -- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/package.xml
+[51.719s] Invoked command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge
