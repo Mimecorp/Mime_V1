@@ -1,0 +1,407 @@
+[0.000000] (-) TimerEvent: {}
+[0.002756] (mime_moveit_bridge) JobQueued: {'identifier': 'mime_moveit_bridge', 'dependencies': OrderedDict()}
+[0.004357] (mime_moveit_bridge) JobStarted: {'identifier': 'mime_moveit_bridge'}
+[0.058716] (mime_moveit_bridge) JobProgress: {'identifier': 'mime_moveit_bridge', 'progress': 'cmake'}
+[0.066070] (mime_moveit_bridge) JobProgress: {'identifier': 'mime_moveit_bridge', 'progress': 'build'}
+[0.069243] (mime_moveit_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge', '--', '-j12', '-l12'], 'cwd': '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mshandilya707'), ('GIT_ASKPASS', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('ANTIGRAVITY_CLI_ALIAS', 'agy-ide'), ('HOME', '/home/mshandilya707'), ('OLDPWD', '/home/mshandilya707/Mime'), ('TERM_PROGRAM_VERSION', '1.107.0'), ('NVM_BIN', '/home/mshandilya707/.nvm/versions/node/v24.18.0/bin'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-646178b2-b013-4dba-b667-169743e42697.sock'), ('NVM_INC', '/home/mshandilya707/.nvm/versions/node/v24.18.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ANTIGRAVITY_AGENT', '1'), ('NVM_DIR', '/home/mshandilya707/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mshandilya707'), ('NAME', 'MAYANKHP'), ('WSL_INTEROP', '/run/WSL/29463_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/bin/remote-cli:/home/mshandilya707/.local/bin:/home/mshandilya707/.cargo/bin:/home/mshandilya707/.nvm/versions/node/v24.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.1.12-hotspot/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/KANTA KUMARI/AppData/Local/Pub/Cache/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mayan/.cargo/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mayan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mayan/AppData/Local/gitkraken/bin:/mnt/c/Users/mayan/AppData/Roaming/npm:/mnt/c/Users/mayan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity IDE/bin:/snap/bin:/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-739f9d6a6122acce.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/mshandilya707/.antigravity-ide-server/data/User/workspaceStorage/9a2287db8fccfdce4f4844f785820cb6/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-63a269d49d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097399] (-) TimerEvent: {}
+[0.200774] (-) TimerEvent: {}
+[0.301789] (-) TimerEvent: {}
+[0.403024] (-) TimerEvent: {}
+[0.503728] (-) TimerEvent: {}
+[0.604847] (-) TimerEvent: {}
+[0.705622] (-) TimerEvent: {}
+[0.728079] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.805929] (-) TimerEvent: {}
+[0.906596] (-) TimerEvent: {}
+[1.007319] (-) TimerEvent: {}
+[1.108002] (-) TimerEvent: {}
+[1.143227] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.208344] (-) TimerEvent: {}
+[1.309030] (-) TimerEvent: {}
+[1.409693] (-) TimerEvent: {}
+[1.510344] (-) TimerEvent: {}
+[1.611151] (-) TimerEvent: {}
+[1.712387] (-) TimerEvent: {}
+[1.802309] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.809701] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.812218] (-) TimerEvent: {}
+[1.833567] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.859001] (mime_moveit_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.890540] (mime_moveit_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.912510] (-) TimerEvent: {}
+[2.003318] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.010455] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.012790] (-) TimerEvent: {}
+[2.113752] (-) TimerEvent: {}
+[2.214868] (-) TimerEvent: {}
+[2.315509] (-) TimerEvent: {}
+[2.416149] (-) TimerEvent: {}
+[2.516786] (-) TimerEvent: {}
+[2.617605] (-) TimerEvent: {}
+[2.718390] (-) TimerEvent: {}
+[2.819128] (-) TimerEvent: {}
+[2.919750] (-) TimerEvent: {}
+[3.020313] (-) TimerEvent: {}
+[3.120973] (-) TimerEvent: {}
+[3.221503] (-) TimerEvent: {}
+[3.322108] (-) TimerEvent: {}
+[3.423061] (-) TimerEvent: {}
+[3.523711] (-) TimerEvent: {}
+[3.624670] (-) TimerEvent: {}
+[3.725530] (-) TimerEvent: {}
+[3.826199] (-) TimerEvent: {}
+[3.926961] (-) TimerEvent: {}
+[4.027918] (-) TimerEvent: {}
+[4.128683] (-) TimerEvent: {}
+[4.229546] (-) TimerEvent: {}
+[4.330294] (-) TimerEvent: {}
+[4.431020] (-) TimerEvent: {}
+[4.531622] (-) TimerEvent: {}
+[4.632334] (-) TimerEvent: {}
+[4.732941] (-) TimerEvent: {}
+[4.833526] (-) TimerEvent: {}
+[4.934128] (-) TimerEvent: {}
+[5.034982] (-) TimerEvent: {}
+[5.135667] (-) TimerEvent: {}
+[5.236348] (-) TimerEvent: {}
+[5.336935] (-) TimerEvent: {}
+[5.437379] (-) TimerEvent: {}
+[5.537892] (-) TimerEvent: {}
+[5.638478] (-) TimerEvent: {}
+[5.738952] (-) TimerEvent: {}
+[5.839471] (-) TimerEvent: {}
+[5.940118] (-) TimerEvent: {}
+[6.040597] (-) TimerEvent: {}
+[6.141198] (-) TimerEvent: {}
+[6.241934] (-) TimerEvent: {}
+[6.342662] (-) TimerEvent: {}
+[6.443476] (-) TimerEvent: {}
+[6.544128] (-) TimerEvent: {}
+[6.644748] (-) TimerEvent: {}
+[6.745462] (-) TimerEvent: {}
+[6.846034] (-) TimerEvent: {}
+[6.946598] (-) TimerEvent: {}
+[7.047267] (-) TimerEvent: {}
+[7.147713] (-) TimerEvent: {}
+[7.248370] (-) TimerEvent: {}
+[7.349019] (-) TimerEvent: {}
+[7.449775] (-) TimerEvent: {}
+[7.550444] (-) TimerEvent: {}
+[7.651528] (-) TimerEvent: {}
+[7.752174] (-) TimerEvent: {}
+[7.852723] (-) TimerEvent: {}
+[7.953193] (-) TimerEvent: {}
+[8.053664] (-) TimerEvent: {}
+[8.154289] (-) TimerEvent: {}
+[8.254910] (-) TimerEvent: {}
+[8.355626] (-) TimerEvent: {}
+[8.456335] (-) TimerEvent: {}
+[8.557185] (-) TimerEvent: {}
+[8.658014] (-) TimerEvent: {}
+[8.758721] (-) TimerEvent: {}
+[8.859279] (-) TimerEvent: {}
+[8.960104] (-) TimerEvent: {}
+[9.060721] (-) TimerEvent: {}
+[9.161738] (-) TimerEvent: {}
+[9.262887] (-) TimerEvent: {}
+[9.363464] (-) TimerEvent: {}
+[9.464130] (-) TimerEvent: {}
+[9.564831] (-) TimerEvent: {}
+[9.665770] (-) TimerEvent: {}
+[9.766629] (-) TimerEvent: {}
+[9.867207] (-) TimerEvent: {}
+[9.967820] (-) TimerEvent: {}
+[10.068576] (-) TimerEvent: {}
+[10.169282] (-) TimerEvent: {}
+[10.270209] (-) TimerEvent: {}
+[10.371033] (-) TimerEvent: {}
+[10.472036] (-) TimerEvent: {}
+[10.573072] (-) TimerEvent: {}
+[10.674097] (-) TimerEvent: {}
+[10.774978] (-) TimerEvent: {}
+[10.875666] (-) TimerEvent: {}
+[10.976514] (-) TimerEvent: {}
+[11.077152] (-) TimerEvent: {}
+[11.177879] (-) TimerEvent: {}
+[11.278722] (-) TimerEvent: {}
+[11.379364] (-) TimerEvent: {}
+[11.479971] (-) TimerEvent: {}
+[11.580709] (-) TimerEvent: {}
+[11.681481] (-) TimerEvent: {}
+[11.782201] (-) TimerEvent: {}
+[11.882801] (-) TimerEvent: {}
+[11.983343] (-) TimerEvent: {}
+[12.083945] (-) TimerEvent: {}
+[12.184770] (-) TimerEvent: {}
+[12.285490] (-) TimerEvent: {}
+[12.386450] (-) TimerEvent: {}
+[12.487472] (-) TimerEvent: {}
+[12.588386] (-) TimerEvent: {}
+[12.689179] (-) TimerEvent: {}
+[12.789901] (-) TimerEvent: {}
+[12.890688] (-) TimerEvent: {}
+[12.991357] (-) TimerEvent: {}
+[13.092124] (-) TimerEvent: {}
+[13.192932] (-) TimerEvent: {}
+[13.293668] (-) TimerEvent: {}
+[13.394393] (-) TimerEvent: {}
+[13.495359] (-) TimerEvent: {}
+[13.596352] (-) TimerEvent: {}
+[13.697113] (-) TimerEvent: {}
+[13.797942] (-) TimerEvent: {}
+[13.898667] (-) TimerEvent: {}
+[13.999462] (-) TimerEvent: {}
+[14.100250] (-) TimerEvent: {}
+[14.201118] (-) TimerEvent: {}
+[14.302097] (-) TimerEvent: {}
+[14.403286] (-) TimerEvent: {}
+[14.504288] (-) TimerEvent: {}
+[14.605289] (-) TimerEvent: {}
+[14.706468] (-) TimerEvent: {}
+[14.807476] (-) TimerEvent: {}
+[14.908229] (-) TimerEvent: {}
+[15.008866] (-) TimerEvent: {}
+[15.109584] (-) TimerEvent: {}
+[15.210270] (-) TimerEvent: {}
+[15.310994] (-) TimerEvent: {}
+[15.411610] (-) TimerEvent: {}
+[15.512497] (-) TimerEvent: {}
+[15.613171] (-) TimerEvent: {}
+[15.714175] (-) TimerEvent: {}
+[15.814870] (-) TimerEvent: {}
+[15.915441] (-) TimerEvent: {}
+[16.016293] (-) TimerEvent: {}
+[16.117347] (-) TimerEvent: {}
+[16.218097] (-) TimerEvent: {}
+[16.318631] (-) TimerEvent: {}
+[16.419131] (-) TimerEvent: {}
+[16.519697] (-) TimerEvent: {}
+[16.620415] (-) TimerEvent: {}
+[16.721075] (-) TimerEvent: {}
+[16.821727] (-) TimerEvent: {}
+[16.922211] (-) TimerEvent: {}
+[17.022840] (-) TimerEvent: {}
+[17.123709] (-) TimerEvent: {}
+[17.224302] (-) TimerEvent: {}
+[17.325196] (-) TimerEvent: {}
+[17.426679] (-) TimerEvent: {}
+[17.527528] (-) TimerEvent: {}
+[17.628365] (-) TimerEvent: {}
+[17.729245] (-) TimerEvent: {}
+[17.829969] (-) TimerEvent: {}
+[17.931034] (-) TimerEvent: {}
+[18.031818] (-) TimerEvent: {}
+[18.133212] (-) TimerEvent: {}
+[18.234228] (-) TimerEvent: {}
+[18.335226] (-) TimerEvent: {}
+[18.435935] (-) TimerEvent: {}
+[18.536863] (-) TimerEvent: {}
+[18.638080] (-) TimerEvent: {}
+[18.739511] (-) TimerEvent: {}
+[18.840391] (-) TimerEvent: {}
+[18.941224] (-) TimerEvent: {}
+[19.041945] (-) TimerEvent: {}
+[19.143036] (-) TimerEvent: {}
+[19.244037] (-) TimerEvent: {}
+[19.345105] (-) TimerEvent: {}
+[19.446055] (-) TimerEvent: {}
+[19.547233] (-) TimerEvent: {}
+[19.649103] (-) TimerEvent: {}
+[19.750024] (-) TimerEvent: {}
+[19.851069] (-) TimerEvent: {}
+[19.951873] (-) TimerEvent: {}
+[20.052418] (-) TimerEvent: {}
+[20.153174] (-) TimerEvent: {}
+[20.254155] (-) TimerEvent: {}
+[20.354679] (-) TimerEvent: {}
+[20.455322] (-) TimerEvent: {}
+[20.555981] (-) TimerEvent: {}
+[20.656627] (-) TimerEvent: {}
+[20.757361] (-) TimerEvent: {}
+[20.857905] (-) TimerEvent: {}
+[20.958415] (-) TimerEvent: {}
+[21.058968] (-) TimerEvent: {}
+[21.159511] (-) TimerEvent: {}
+[21.260041] (-) TimerEvent: {}
+[21.360874] (-) TimerEvent: {}
+[21.461635] (-) TimerEvent: {}
+[21.562083] (-) TimerEvent: {}
+[21.662548] (-) TimerEvent: {}
+[21.762986] (-) TimerEvent: {}
+[21.863422] (-) TimerEvent: {}
+[21.963896] (-) TimerEvent: {}
+[22.064391] (-) TimerEvent: {}
+[22.164827] (-) TimerEvent: {}
+[22.265246] (-) TimerEvent: {}
+[22.365748] (-) TimerEvent: {}
+[22.466254] (-) TimerEvent: {}
+[22.566688] (-) TimerEvent: {}
+[22.614232] (mime_moveit_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[22.666874] (-) TimerEvent: {}
+[22.706123] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[22.767055] (-) TimerEvent: {}
+[22.867491] (-) TimerEvent: {}
+[22.967974] (-) TimerEvent: {}
+[23.068591] (-) TimerEvent: {}
+[23.169077] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[23.169300] (-) TimerEvent: {}
+[23.269625] (-) TimerEvent: {}
+[23.330412] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[23.331663] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[23.332299] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge/include>\n'}
+[23.332670] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[23.333375] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[23.333529] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[23.334352] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[23.335545] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[23.335725] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[23.336117] (mime_moveit_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[23.339459] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[23.369784] (-) TimerEvent: {}
+[23.399586] (mime_moveit_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[23.418287] (mime_moveit_bridge) StdoutLine: {'line': b'-- Build files have been written to: /home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge\n'}
+[23.466717] (mime_moveit_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target telemetry_grpc_proto\x1b[0m\n'}
+[23.470052] (-) TimerEvent: {}
+[23.496827] (mime_moveit_bridge) StdoutLine: {'line': b'[ 66%] Built target telemetry_grpc_proto\n'}
+[23.511384] (mime_moveit_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target moveit_bridge_node\x1b[0m\n'}
+[23.570229] (-) TimerEvent: {}
+[23.605747] (mime_moveit_bridge) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/moveit_bridge_node.dir/src/moveit_bridge_node.cpp.o\x1b[0m\n'}
+[23.670449] (-) TimerEvent: {}
+[23.771023] (-) TimerEvent: {}
+[23.871505] (-) TimerEvent: {}
+[23.971965] (-) TimerEvent: {}
+[24.072427] (-) TimerEvent: {}
+[24.173055] (-) TimerEvent: {}
+[24.273493] (-) TimerEvent: {}
+[24.374115] (-) TimerEvent: {}
+[24.474737] (-) TimerEvent: {}
+[24.575290] (-) TimerEvent: {}
+[24.676039] (-) TimerEvent: {}
+[24.776593] (-) TimerEvent: {}
+[24.877043] (-) TimerEvent: {}
+[24.977588] (-) TimerEvent: {}
+[25.078291] (-) TimerEvent: {}
+[25.178845] (-) TimerEvent: {}
+[25.279488] (-) TimerEvent: {}
+[25.379955] (-) TimerEvent: {}
+[25.480459] (-) TimerEvent: {}
+[25.581068] (-) TimerEvent: {}
+[25.681810] (-) TimerEvent: {}
+[25.782434] (-) TimerEvent: {}
+[25.883033] (-) TimerEvent: {}
+[25.983712] (-) TimerEvent: {}
+[26.084402] (-) TimerEvent: {}
+[26.185002] (-) TimerEvent: {}
+[26.285640] (-) TimerEvent: {}
+[26.386323] (-) TimerEvent: {}
+[26.486955] (-) TimerEvent: {}
+[26.587751] (-) TimerEvent: {}
+[26.688678] (-) TimerEvent: {}
+[26.789352] (-) TimerEvent: {}
+[26.890061] (-) TimerEvent: {}
+[26.990752] (-) TimerEvent: {}
+[27.091466] (-) TimerEvent: {}
+[27.192311] (-) TimerEvent: {}
+[27.293040] (-) TimerEvent: {}
+[27.393580] (-) TimerEvent: {}
+[27.494236] (-) TimerEvent: {}
+[27.594987] (-) TimerEvent: {}
+[27.695866] (-) TimerEvent: {}
+[27.796606] (-) TimerEvent: {}
+[27.897218] (-) TimerEvent: {}
+[27.997862] (-) TimerEvent: {}
+[28.098531] (-) TimerEvent: {}
+[28.199219] (-) TimerEvent: {}
+[28.299869] (-) TimerEvent: {}
+[28.400702] (-) TimerEvent: {}
+[28.501373] (-) TimerEvent: {}
+[28.602030] (-) TimerEvent: {}
+[28.702791] (-) TimerEvent: {}
+[28.803425] (-) TimerEvent: {}
+[28.904306] (-) TimerEvent: {}
+[29.004896] (-) TimerEvent: {}
+[29.105557] (-) TimerEvent: {}
+[29.206087] (-) TimerEvent: {}
+[29.306688] (-) TimerEvent: {}
+[29.407305] (-) TimerEvent: {}
+[29.507838] (-) TimerEvent: {}
+[29.608650] (-) TimerEvent: {}
+[29.709229] (-) TimerEvent: {}
+[29.809781] (-) TimerEvent: {}
+[29.910468] (-) TimerEvent: {}
+[30.011407] (-) TimerEvent: {}
+[30.117215] (-) TimerEvent: {}
+[30.217855] (-) TimerEvent: {}
+[30.318425] (-) TimerEvent: {}
+[30.419257] (-) TimerEvent: {}
+[30.519967] (-) TimerEvent: {}
+[30.620721] (-) TimerEvent: {}
+[30.721462] (-) TimerEvent: {}
+[30.822242] (-) TimerEvent: {}
+[30.922879] (-) TimerEvent: {}
+[31.023445] (-) TimerEvent: {}
+[31.124008] (-) TimerEvent: {}
+[31.224647] (-) TimerEvent: {}
+[31.325232] (-) TimerEvent: {}
+[31.426000] (-) TimerEvent: {}
+[31.526716] (-) TimerEvent: {}
+[31.627324] (-) TimerEvent: {}
+[31.728008] (-) TimerEvent: {}
+[31.828586] (-) TimerEvent: {}
+[31.929350] (-) TimerEvent: {}
+[32.030048] (-) TimerEvent: {}
+[32.130720] (-) TimerEvent: {}
+[32.231328] (-) TimerEvent: {}
+[32.331941] (-) TimerEvent: {}
+[32.432474] (-) TimerEvent: {}
+[32.533193] (-) TimerEvent: {}
+[32.633983] (-) TimerEvent: {}
+[32.734650] (-) TimerEvent: {}
+[32.835313] (-) TimerEvent: {}
+[32.935987] (-) TimerEvent: {}
+[33.036512] (-) TimerEvent: {}
+[33.137113] (-) TimerEvent: {}
+[33.237588] (-) TimerEvent: {}
+[33.338127] (-) TimerEvent: {}
+[33.438644] (-) TimerEvent: {}
+[33.539095] (-) TimerEvent: {}
+[33.639589] (-) TimerEvent: {}
+[33.740232] (-) TimerEvent: {}
+[33.840899] (-) TimerEvent: {}
+[33.849649] (mime_moveit_bridge) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable moveit_bridge_node\x1b[0m\n'}
+[33.941097] (-) TimerEvent: {}
+[34.041553] (-) TimerEvent: {}
+[34.142003] (-) TimerEvent: {}
+[34.242657] (-) TimerEvent: {}
+[34.343342] (-) TimerEvent: {}
+[34.443959] (-) TimerEvent: {}
+[34.544646] (-) TimerEvent: {}
+[34.645258] (-) TimerEvent: {}
+[34.719115] (mime_moveit_bridge) StdoutLine: {'line': b'[100%] Built target moveit_bridge_node\n'}
+[34.750527] (mime_moveit_bridge) CommandEnded: {'returncode': 0}
+[34.757713] (-) TimerEvent: {}
+[34.761652] (mime_moveit_bridge) JobProgress: {'identifier': 'mime_moveit_bridge', 'progress': 'install'}
+[34.780236] (mime_moveit_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge'], 'cwd': '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mshandilya707'), ('GIT_ASKPASS', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('ANTIGRAVITY_CLI_ALIAS', 'agy-ide'), ('HOME', '/home/mshandilya707'), ('OLDPWD', '/home/mshandilya707/Mime'), ('TERM_PROGRAM_VERSION', '1.107.0'), ('NVM_BIN', '/home/mshandilya707/.nvm/versions/node/v24.18.0/bin'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-646178b2-b013-4dba-b667-169743e42697.sock'), ('NVM_INC', '/home/mshandilya707/.nvm/versions/node/v24.18.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('ANTIGRAVITY_AGENT', '1'), ('NVM_DIR', '/home/mshandilya707/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mshandilya707'), ('NAME', 'MAYANKHP'), ('WSL_INTEROP', '/run/WSL/29463_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/bin/remote-cli:/home/mshandilya707/.local/bin:/home/mshandilya707/.cargo/bin:/home/mshandilya707/.nvm/versions/node/v24.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.1.12-hotspot/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/KANTA KUMARI/AppData/Local/Pub/Cache/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mayan/.cargo/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mayan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mayan/AppData/Local/gitkraken/bin:/mnt/c/Users/mayan/AppData/Roaming/npm:/mnt/c/Users/mayan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity IDE/bin:/snap/bin:/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-739f9d6a6122acce.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/mshandilya707/.antigravity-ide-server/data/User/workspaceStorage/9a2287db8fccfdce4f4844f785820cb6/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-63a269d49d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[34.790947] (mime_moveit_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.792602] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/lib/mime_moveit_bridge/moveit_bridge_node\n'}
+[34.822770] (mime_moveit_bridge) StdoutLine: {'line': b'-- Set runtime path of "/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/lib/mime_moveit_bridge/moveit_bridge_node" to ""\n'}
+[34.823034] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/package_run_dependencies/mime_moveit_bridge\n'}
+[34.823641] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/parent_prefix_path/mime_moveit_bridge\n'}
+[34.823874] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/ament_prefix_path.sh\n'}
+[34.823953] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/ament_prefix_path.dsv\n'}
+[34.825918] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/path.sh\n'}
+[34.826822] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/environment/path.dsv\n'}
+[34.828382] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.bash\n'}
+[34.829425] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.sh\n'}
+[34.830003] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.zsh\n'}
+[34.830729] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/local_setup.dsv\n'}
+[34.832263] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/package.dsv\n'}
+[34.833487] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/ament_index/resource_index/packages/mime_moveit_bridge\n'}
+[34.833848] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/cmake/mime_moveit_bridgeConfig.cmake\n'}
+[34.834312] (mime_moveit_bridge) StdoutLine: {'line': b'-- Up-to-date: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/cmake/mime_moveit_bridgeConfig-version.cmake\n'}
+[34.834762] (mime_moveit_bridge) StdoutLine: {'line': b'-- Installing: /home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge/share/mime_moveit_bridge/package.xml\n'}
+[34.843753] (mime_moveit_bridge) CommandEnded: {'returncode': 0}
+[34.858005] (-) TimerEvent: {}
+[34.903279] (mime_moveit_bridge) JobEnded: {'identifier': 'mime_moveit_bridge', 'rc': 0}
+[34.905873] (-) EventReactorShutdown: {}

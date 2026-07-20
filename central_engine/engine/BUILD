@@ -16,7 +16,6 @@ cc_binary(
     srcs = ["server.cpp"],
     deps = [
         ":ekf",
-        ":logger",
         "//proto:telemetry_cc_grpc",
         "//proto:telemetry_cc_proto",
         "@com_github_grpc_grpc//:grpc++",

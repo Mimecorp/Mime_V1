@@ -1,0 +1,41 @@
+[0.011s] Invoking command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge -DCMAKE_INSTALL_PREFIX=/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge
+[0.020s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.123s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.412s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.414s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.418s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.424s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.455s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.456s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[10.545s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.578s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[10.586s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[10.693s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[12.290s] -- Found parameter_traits: 0.7.4 (/opt/ros/humble/share/parameter_traits/cmake)
+[12.295s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[15.008s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[15.027s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[17.661s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[17.684s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[17.698s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[20.424s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[20.424s]   By not providing "FindgRPC.cmake" in CMAKE_MODULE_PATH this project has
+[20.424s]   asked CMake to find a package configuration file provided by "gRPC", but
+[20.424s]   CMake did not find one.
+[20.424s] 
+[20.424s]   Could not find a package configuration file provided by "gRPC" with any of
+[20.425s]   the following names:
+[20.425s] 
+[20.425s]     gRPCConfig.cmake
+[20.425s]     grpc-config.cmake
+[20.425s] 
+[20.425s]   Add the installation prefix of "gRPC" to CMAKE_PREFIX_PATH or set
+[20.426s]   "gRPC_DIR" to a directory containing one of the above files.  If "gRPC"
+[20.426s]   provides a separate development package or SDK, be sure it has been
+[20.426s]   installed.
+[20.426s] 
+[20.426s] [0m
+[20.426s] -- Configuring incomplete, errors occurred!
+[20.426s] See also "/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge/CMakeFiles/CMakeOutput.log".
+[20.437s] Invoked command in '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge -DCMAKE_INSTALL_PREFIX=/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge

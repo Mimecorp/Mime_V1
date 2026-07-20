@@ -1,0 +1,250 @@
+[0.000000] (-) TimerEvent: {}
+[0.001055] (mime_moveit_bridge) JobQueued: {'identifier': 'mime_moveit_bridge', 'dependencies': OrderedDict()}
+[0.001156] (mime_moveit_bridge) JobStarted: {'identifier': 'mime_moveit_bridge'}
+[0.007736] (mime_moveit_bridge) JobProgress: {'identifier': 'mime_moveit_bridge', 'progress': 'cmake'}
+[0.008637] (mime_moveit_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/mshandilya707/Mime/mime_ros2_ws/src/mime_moveit_bridge', '-DCMAKE_INSTALL_PREFIX=/home/mshandilya707/Mime/mime_ros2_ws/install/mime_moveit_bridge'], 'cwd': '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mshandilya707'), ('GIT_ASKPASS', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('ANTIGRAVITY_CLI_ALIAS', 'agy-ide'), ('HOME', '/home/mshandilya707'), ('OLDPWD', '/home/mshandilya707/Mime'), ('TERM_PROGRAM_VERSION', '1.107.0'), ('NVM_BIN', '/home/mshandilya707/.nvm/versions/node/v24.18.0/bin'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-dd16c449-6457-47f0-a13f-f20204f255ea.sock'), ('NVM_INC', '/home/mshandilya707/.nvm/versions/node/v24.18.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('NVM_DIR', '/home/mshandilya707/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mshandilya707'), ('NAME', 'MAYANKHP'), ('WSL_INTEROP', '/run/WSL/20699_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/mshandilya707/.antigravity-ide-server/bin/2.1.1-e0b7a2bcf575cfba10528c4e7c10bd3ce2d7769a/bin/remote-cli:/home/mshandilya707/.local/bin:/home/mshandilya707/.cargo/bin:/home/mshandilya707/.nvm/versions/node/v24.18.0/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Eclipse Adoptium/jdk-21.0.1.12-hotspot/bin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Users/KANTA KUMARI/AppData/Local/Pub/Cache/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/HP/HP One Agent:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Users/mayan/.cargo/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/mayan/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/mayan/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/mayan/AppData/Local/gitkraken/bin:/mnt/c/Users/mayan/AppData/Roaming/npm:/mnt/c/Users/mayan/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity/bin:/mnt/c/Users/mayan/AppData/Local/Programs/Antigravity IDE/bin:/snap/bin:/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/mshandilya707/.antigravity-ide-server/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7ce3275cbf0cb228.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/home/mshandilya707/.antigravity-ide-server/data/User/workspaceStorage/9a2287db8fccfdce4f4844f785820cb6/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-63a269d49d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.020910] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099675] (-) TimerEvent: {}
+[0.124259] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199876] (-) TimerEvent: {}
+[0.300411] (-) TimerEvent: {}
+[0.400775] (-) TimerEvent: {}
+[0.413022] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.414600] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.419437] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.425402] (mime_moveit_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.434684] (mime_moveit_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.455741] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.456618] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500912] (-) TimerEvent: {}
+[0.601301] (-) TimerEvent: {}
+[0.701631] (-) TimerEvent: {}
+[0.801976] (-) TimerEvent: {}
+[0.902386] (-) TimerEvent: {}
+[1.002857] (-) TimerEvent: {}
+[1.103196] (-) TimerEvent: {}
+[1.203562] (-) TimerEvent: {}
+[1.303880] (-) TimerEvent: {}
+[1.404224] (-) TimerEvent: {}
+[1.504571] (-) TimerEvent: {}
+[1.604919] (-) TimerEvent: {}
+[1.705356] (-) TimerEvent: {}
+[1.805750] (-) TimerEvent: {}
+[1.906068] (-) TimerEvent: {}
+[2.006452] (-) TimerEvent: {}
+[2.106955] (-) TimerEvent: {}
+[2.207379] (-) TimerEvent: {}
+[2.307733] (-) TimerEvent: {}
+[2.408064] (-) TimerEvent: {}
+[2.508482] (-) TimerEvent: {}
+[2.608939] (-) TimerEvent: {}
+[2.709298] (-) TimerEvent: {}
+[2.809744] (-) TimerEvent: {}
+[2.910186] (-) TimerEvent: {}
+[3.010613] (-) TimerEvent: {}
+[3.111059] (-) TimerEvent: {}
+[3.211498] (-) TimerEvent: {}
+[3.311941] (-) TimerEvent: {}
+[3.412418] (-) TimerEvent: {}
+[3.512968] (-) TimerEvent: {}
+[3.613506] (-) TimerEvent: {}
+[3.714005] (-) TimerEvent: {}
+[3.814357] (-) TimerEvent: {}
+[3.914683] (-) TimerEvent: {}
+[4.015070] (-) TimerEvent: {}
+[4.115471] (-) TimerEvent: {}
+[4.215806] (-) TimerEvent: {}
+[4.316159] (-) TimerEvent: {}
+[4.416526] (-) TimerEvent: {}
+[4.516908] (-) TimerEvent: {}
+[4.617249] (-) TimerEvent: {}
+[4.717593] (-) TimerEvent: {}
+[4.817956] (-) TimerEvent: {}
+[4.918451] (-) TimerEvent: {}
+[5.018905] (-) TimerEvent: {}
+[5.119331] (-) TimerEvent: {}
+[5.219681] (-) TimerEvent: {}
+[5.320131] (-) TimerEvent: {}
+[5.420513] (-) TimerEvent: {}
+[5.520847] (-) TimerEvent: {}
+[5.621244] (-) TimerEvent: {}
+[5.721709] (-) TimerEvent: {}
+[5.822177] (-) TimerEvent: {}
+[5.922662] (-) TimerEvent: {}
+[6.023056] (-) TimerEvent: {}
+[6.123420] (-) TimerEvent: {}
+[6.223858] (-) TimerEvent: {}
+[6.324317] (-) TimerEvent: {}
+[6.424866] (-) TimerEvent: {}
+[6.525406] (-) TimerEvent: {}
+[6.625899] (-) TimerEvent: {}
+[6.726383] (-) TimerEvent: {}
+[6.826973] (-) TimerEvent: {}
+[6.927456] (-) TimerEvent: {}
+[7.027885] (-) TimerEvent: {}
+[7.128265] (-) TimerEvent: {}
+[7.228737] (-) TimerEvent: {}
+[7.329095] (-) TimerEvent: {}
+[7.429496] (-) TimerEvent: {}
+[7.529927] (-) TimerEvent: {}
+[7.630454] (-) TimerEvent: {}
+[7.730909] (-) TimerEvent: {}
+[7.831395] (-) TimerEvent: {}
+[7.931914] (-) TimerEvent: {}
+[8.032357] (-) TimerEvent: {}
+[8.132671] (-) TimerEvent: {}
+[8.233037] (-) TimerEvent: {}
+[8.333519] (-) TimerEvent: {}
+[8.434023] (-) TimerEvent: {}
+[8.534393] (-) TimerEvent: {}
+[8.634774] (-) TimerEvent: {}
+[8.735150] (-) TimerEvent: {}
+[8.835627] (-) TimerEvent: {}
+[8.936110] (-) TimerEvent: {}
+[9.036572] (-) TimerEvent: {}
+[9.137138] (-) TimerEvent: {}
+[9.237630] (-) TimerEvent: {}
+[9.338008] (-) TimerEvent: {}
+[9.438489] (-) TimerEvent: {}
+[9.539013] (-) TimerEvent: {}
+[9.639422] (-) TimerEvent: {}
+[9.739843] (-) TimerEvent: {}
+[9.840392] (-) TimerEvent: {}
+[9.941028] (-) TimerEvent: {}
+[10.041404] (-) TimerEvent: {}
+[10.141820] (-) TimerEvent: {}
+[10.242166] (-) TimerEvent: {}
+[10.342535] (-) TimerEvent: {}
+[10.442870] (-) TimerEvent: {}
+[10.543229] (-) TimerEvent: {}
+[10.545636] (mime_moveit_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[10.579404] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[10.587051] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[10.643467] (-) TimerEvent: {}
+[10.694414] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[10.743583] (-) TimerEvent: {}
+[10.843900] (-) TimerEvent: {}
+[10.944243] (-) TimerEvent: {}
+[11.044677] (-) TimerEvent: {}
+[11.145071] (-) TimerEvent: {}
+[11.245398] (-) TimerEvent: {}
+[11.345723] (-) TimerEvent: {}
+[11.446072] (-) TimerEvent: {}
+[11.546543] (-) TimerEvent: {}
+[11.646932] (-) TimerEvent: {}
+[11.747381] (-) TimerEvent: {}
+[11.847883] (-) TimerEvent: {}
+[11.948313] (-) TimerEvent: {}
+[12.048715] (-) TimerEvent: {}
+[12.149083] (-) TimerEvent: {}
+[12.249561] (-) TimerEvent: {}
+[12.290306] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.4 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[12.296317] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[12.349720] (-) TimerEvent: {}
+[12.450090] (-) TimerEvent: {}
+[12.550547] (-) TimerEvent: {}
+[12.651036] (-) TimerEvent: {}
+[12.751532] (-) TimerEvent: {}
+[12.852014] (-) TimerEvent: {}
+[12.952484] (-) TimerEvent: {}
+[13.052978] (-) TimerEvent: {}
+[13.153465] (-) TimerEvent: {}
+[13.253845] (-) TimerEvent: {}
+[13.354310] (-) TimerEvent: {}
+[13.454740] (-) TimerEvent: {}
+[13.555126] (-) TimerEvent: {}
+[13.655585] (-) TimerEvent: {}
+[13.755932] (-) TimerEvent: {}
+[13.856271] (-) TimerEvent: {}
+[13.956608] (-) TimerEvent: {}
+[14.056950] (-) TimerEvent: {}
+[14.157341] (-) TimerEvent: {}
+[14.257762] (-) TimerEvent: {}
+[14.358158] (-) TimerEvent: {}
+[14.458539] (-) TimerEvent: {}
+[14.558885] (-) TimerEvent: {}
+[14.659277] (-) TimerEvent: {}
+[14.759800] (-) TimerEvent: {}
+[14.860209] (-) TimerEvent: {}
+[14.960550] (-) TimerEvent: {}
+[15.008558] (mime_moveit_bridge) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[15.027774] (mime_moveit_bridge) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[15.060780] (-) TimerEvent: {}
+[15.161265] (-) TimerEvent: {}
+[15.261611] (-) TimerEvent: {}
+[15.361999] (-) TimerEvent: {}
+[15.462385] (-) TimerEvent: {}
+[15.562742] (-) TimerEvent: {}
+[15.663053] (-) TimerEvent: {}
+[15.763372] (-) TimerEvent: {}
+[15.863749] (-) TimerEvent: {}
+[15.964048] (-) TimerEvent: {}
+[16.064394] (-) TimerEvent: {}
+[16.164863] (-) TimerEvent: {}
+[16.265218] (-) TimerEvent: {}
+[16.365695] (-) TimerEvent: {}
+[16.466071] (-) TimerEvent: {}
+[16.566385] (-) TimerEvent: {}
+[16.666827] (-) TimerEvent: {}
+[16.767307] (-) TimerEvent: {}
+[16.867724] (-) TimerEvent: {}
+[16.968188] (-) TimerEvent: {}
+[17.068621] (-) TimerEvent: {}
+[17.169190] (-) TimerEvent: {}
+[17.269555] (-) TimerEvent: {}
+[17.369886] (-) TimerEvent: {}
+[17.470219] (-) TimerEvent: {}
+[17.570577] (-) TimerEvent: {}
+[17.662438] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[17.670895] (-) TimerEvent: {}
+[17.684640] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[17.698909] (mime_moveit_bridge) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[17.771015] (-) TimerEvent: {}
+[17.871338] (-) TimerEvent: {}
+[17.971659] (-) TimerEvent: {}
+[18.071995] (-) TimerEvent: {}
+[18.172368] (-) TimerEvent: {}
+[18.272800] (-) TimerEvent: {}
+[18.373173] (-) TimerEvent: {}
+[18.473591] (-) TimerEvent: {}
+[18.574023] (-) TimerEvent: {}
+[18.674552] (-) TimerEvent: {}
+[18.775005] (-) TimerEvent: {}
+[18.875461] (-) TimerEvent: {}
+[18.975978] (-) TimerEvent: {}
+[19.076402] (-) TimerEvent: {}
+[19.176867] (-) TimerEvent: {}
+[19.277243] (-) TimerEvent: {}
+[19.377691] (-) TimerEvent: {}
+[19.478025] (-) TimerEvent: {}
+[19.578382] (-) TimerEvent: {}
+[19.678774] (-) TimerEvent: {}
+[19.779203] (-) TimerEvent: {}
+[19.879612] (-) TimerEvent: {}
+[19.980054] (-) TimerEvent: {}
+[20.080544] (-) TimerEvent: {}
+[20.181081] (-) TimerEvent: {}
+[20.281471] (-) TimerEvent: {}
+[20.381929] (-) TimerEvent: {}
+[20.424945] (mime_moveit_bridge) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:15 (find_package):\n'}
+[20.425196] (mime_moveit_bridge) StderrLine: {'line': b'  By not providing "FindgRPC.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[20.425299] (mime_moveit_bridge) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "gRPC", but\n'}
+[20.425364] (mime_moveit_bridge) StderrLine: {'line': b'  CMake did not find one.\n'}
+[20.425470] (mime_moveit_bridge) StderrLine: {'line': b'\n'}
+[20.425563] (mime_moveit_bridge) StderrLine: {'line': b'  Could not find a package configuration file provided by "gRPC" with any of\n'}
+[20.425653] (mime_moveit_bridge) StderrLine: {'line': b'  the following names:\n'}
+[20.425952] (mime_moveit_bridge) StderrLine: {'line': b'\n'}
+[20.426156] (mime_moveit_bridge) StderrLine: {'line': b'    gRPCConfig.cmake\n'}
+[20.426321] (mime_moveit_bridge) StderrLine: {'line': b'    grpc-config.cmake\n'}
+[20.426427] (mime_moveit_bridge) StderrLine: {'line': b'\n'}
+[20.426526] (mime_moveit_bridge) StderrLine: {'line': b'  Add the installation prefix of "gRPC" to CMAKE_PREFIX_PATH or set\n'}
+[20.426625] (mime_moveit_bridge) StderrLine: {'line': b'  "gRPC_DIR" to a directory containing one of the above files.  If "gRPC"\n'}
+[20.426722] (mime_moveit_bridge) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[20.426817] (mime_moveit_bridge) StderrLine: {'line': b'  installed.\n'}
+[20.426910] (mime_moveit_bridge) StderrLine: {'line': b'\n'}
+[20.427002] (mime_moveit_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[20.427092] (mime_moveit_bridge) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[20.427195] (mime_moveit_bridge) StdoutLine: {'line': b'See also "/home/mshandilya707/Mime/mime_ros2_ws/build/mime_moveit_bridge/CMakeFiles/CMakeOutput.log".\n'}
+[20.438113] (mime_moveit_bridge) CommandEnded: {'returncode': 1}
+[20.455443] (mime_moveit_bridge) JobEnded: {'identifier': 'mime_moveit_bridge', 'rc': 1}
+[20.466286] (-) EventReactorShutdown: {}
